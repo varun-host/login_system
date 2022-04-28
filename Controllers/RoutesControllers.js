@@ -15,7 +15,7 @@ exports.login_get =(req, res) =>{
     delete req.session.error;
     //res.render("login", { err: error });
     //res.send("Login Page",{err:error});
-    res.status(200).send("Login Page",{err:error});
+    res.status(200).send("Login Page");
 }
 
 //Login page router for POST request on '/login' ==============
