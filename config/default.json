@@ -1,4 +1,3 @@
 {
-    "mongoURI": "mongodb://localhost:27017/FinalProject"
-  }
-  
+  "mongoURI": "mongodb+srv://finalproject:finalproject1@cluster0.gsnsy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
