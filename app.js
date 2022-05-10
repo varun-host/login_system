@@ -8,7 +8,7 @@ const connectDB = require ("./config/db");
 const mongoURI = config.get("mongoURI");
 const app = express();
 const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 6000;
+//const PORT = process.env.PORT || 6000;
 
 connectDB();
 //Session collection to store sessions of logged in users=====
@@ -41,4 +41,4 @@ app.get("/dashboard", isAuth, appController.dashboard_get);
 //Logout
 app.post("/logout", appController.logout_post);
 
-app.listen(PORT, console.log(`App Running on http://localhost:${PORT}`));
+app.listen(console.log(`App Running on https://smartaiassistant.herokuapp.com/`));
